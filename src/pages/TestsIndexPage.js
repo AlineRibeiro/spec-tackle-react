@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Test } from "../api/test";
+import { Project } from "../api/test";
 
 
 export const TestIndexPage = () => {
@@ -8,7 +8,7 @@ export const TestIndexPage = () => {
   });
 
   useEffect(() => {
-    Test.index().then(response => {
+    Project.index().then(response => {
       setTestIndex({ tests: response.tests});
     })
   }, []);
