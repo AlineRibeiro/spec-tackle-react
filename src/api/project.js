@@ -1,8 +1,8 @@
 import { baseUrl } from "../config";
 
-export const Test = {
+export const Project = {
   index() {
-    return fetch(`${baseUrl}/tests`, {
+    return fetch(`${baseUrl}/projects`, {
     }).then(res => res.json());
   }
 };
