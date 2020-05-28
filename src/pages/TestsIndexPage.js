@@ -17,7 +17,7 @@ export const TestIndexPage = () => {
       <ul>
         {testIndex.tests.map(test => (
           <li key={test.id} >
-                {test.name}
+                {test.project_name}
           </li>
         ))}
       </ul>
