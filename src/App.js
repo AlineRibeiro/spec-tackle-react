@@ -1,11 +1,15 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch} from "react-router-dom";
+import { TestIndexPage } from "../src/pages/TestsIndexPage";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <p>Hello Albukao</p>
-    </div>
-  );
-}
+    <BrowserRouter>
+      <Switch>
+       <Route exact path="/tests" component={TestIndexPage} />
+      </Switch>
+    </BrowserRouter>
+  )
+};
 
 export default App;
