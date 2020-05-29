@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Project } from "../api/project";
+import { Link } from "react-router-dom";
 
 
 export const ProjectIndexPage = () => {
@@ -18,7 +19,9 @@ export const ProjectIndexPage = () => {
       <ul>
         {projectIndex.projects.map(project => (
           <li key={project.id} >
-                {project.name}
+            <Link to={`/projects/${project.id}`}>
+              {project.name}
+            </Link>
           </li>
         ))}
       </ul>

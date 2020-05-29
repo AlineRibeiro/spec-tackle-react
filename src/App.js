@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Route, Switch} from "react-router-dom";
 import { CreateProjectPage } from "../src/pages/CreateProjectPage";
 import { ProjectIndexPage } from "../src/pages/ProjectsIndexPage";
+import { ProjectShowPage } from "../src/pages/ProjectShowPage";
 
 
 const App = () => {
@@ -10,6 +11,7 @@ const App = () => {
       <Switch>
        <Route exact path="/projects" component={ProjectIndexPage} />
         <Route exact path="/projects/new" component={CreateProjectPage} />
+        <Route exact path="/projects/:id" component={ProjectShowPage} />
       </Switch>
     </BrowserRouter>
   )
