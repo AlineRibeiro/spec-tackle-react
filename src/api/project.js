@@ -24,7 +24,6 @@ export const Project = {
       method: "DELETE"
     }).then(res => res.json());
   }
-
 };
 
 
