@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Project } from "../api/project";
+import {Link} from "react-router-dom";
 
 //pensar no futuro em colocar um isLoading false
 export const ProjectShowPage = (props) => {
@@ -21,6 +22,9 @@ export const ProjectShowPage = (props) => {
       <p>{projectShow.project.comment}</p>
       <p>{projectShow.project.deadline}</p>
       <p>{projectShow.project.finished_at}</p>
+      <Link to={`/projects`}>
+        Back to projectIndex
+      </Link>
     </div>
   )
 };
