@@ -10,6 +10,7 @@ const App = () => {
       <Switch>
        <Route exact path="/projects" component={ProjectIndexPage} />
         <Route exact path="/projects/new" component={CreateProjectPage} />
+        <Route exact path="/projects/:id" component={ProjectShowPage} />
       </Switch>
     </BrowserRouter>
   )
