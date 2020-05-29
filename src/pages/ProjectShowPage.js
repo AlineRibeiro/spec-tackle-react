@@ -1,12 +1,21 @@
 import React, { useState, useEffect } from "react";
 import { Project } from "../api/project";
 import {Link} from "react-router-dom";
+import {Button, Icon} from "semantic-ui-react"
 
 //pensar no futuro em colocar um isLoading false
 export const ProjectShowPage = (props) => {
   let [projectShow, setProjectShow] = useState({
     project: {}
   });
+
+  const destroyProject = id => {
+    Project.destroy(id).then(() => {
+      Project.show().then(response => {
+        setProjectShow({ project: response.project });
+      });
+    });
+  };
 
   useEffect(() => {
     Project.show(props.match.params.id).then(response => {
@@ -25,6 +34,15 @@ export const ProjectShowPage = (props) => {
       <Link to={`/projects`}>
         Back to projectIndex
       </Link>
+      <Button
+        floated="right"
+        color="red"
+        onClick={() => destroyProject(projectShow.project.id)}
+      >
+        <Button.Content visible>
+          <Icon name="trash alternate" />
+        </Button.Content>
+      </Button>
     </div>
   )
 };

@@ -18,6 +18,11 @@ export const Project = {
   show(id) {
     return fetch(`${baseUrl}/projects/${id}`, {
     }).then(res => res.json());
+  },
+  destroy(id) {
+    return fetch(`${baseUrl}/projects/${id}`, {
+      method: "DELETE"
+    }).then(res => res.json());
   }
 
 };
