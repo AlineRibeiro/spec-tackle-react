@@ -14,8 +14,12 @@ export const Project = {
       body: JSON.stringify(params)
     })
       .then(res => res.json());
-
+  },
+  show(id) {
+    return fetch(`${baseUrl}/projects/${id}`, {
+    }).then(res => res.json());
   }
+
 };
 
 
