@@ -1,6 +1,6 @@
 import React, { useState} from "react";
 import { Project } from "../api/project";
-import { Button, Form } from "semantic-ui-react";
+import { Button, Form, Container } from "semantic-ui-react";
 
 export const CreateProjectPage = props => {
   const [createProjectData, setCreateProjectData] = useState({});
@@ -20,6 +20,7 @@ const onFormSubmit = () => {
   });
 };
   return (
+    <Container>
       <Form onSubmit={onFormSubmit}>
         <Form.Field>
           <label>Project Name</label>
@@ -47,6 +48,7 @@ const onFormSubmit = () => {
         </Form.Field>
         <Button type="submit">Submit</Button>
       </Form>
+    </Container>
   );
 };
 
