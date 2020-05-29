@@ -16,6 +16,11 @@ export const ProjectShowPage = (props) => {
     <div>
       <h1>This is the project show page</h1>
       <p>{projectShow.project.name}</p>
+      <p>{projectShow.project.environment}</p>
+      <p>{projectShow.project.link}</p>
+      <p>{projectShow.project.comment}</p>
+      <p>{projectShow.project.deadline}</p>
+      <p>{projectShow.project.finished_at}</p>
     </div>
   )
 };
