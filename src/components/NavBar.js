@@ -2,8 +2,15 @@ import React from "react";
 import { Menu } from 'semantic-ui-react'
 
 export const  NavBar = (props) => {
+
     return (
       <Menu secondary>
+          <img
+            src='../../images/spec-tackle_logo.png'
+            alt='logo'
+            width="200px"
+            height="auto"
+          />
         <Menu.Item
           name='howDoesItWork'
         >
