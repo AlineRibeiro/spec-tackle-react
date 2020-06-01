@@ -3,23 +3,23 @@ import { Menu } from 'semantic-ui-react'
 
 export const  NavBar = (props) => {
     return (
-      <Menu>
+      <Menu secondary>
         <Menu.Item
-          name='editorials'
+          name='howDoesItWork'
         >
-          Editorials
+          How does it work?
         </Menu.Item>
 
         <Menu.Item
-          name='reviews'
+          name='saveMoney'
         >
-          Reviews
+          Save Money
         </Menu.Item>
 
         <Menu.Item
-          name='upcomingEvents'
+          name='team'
         >
-          Upcoming Events
+          Team
         </Menu.Item>
       </Menu>
     )
