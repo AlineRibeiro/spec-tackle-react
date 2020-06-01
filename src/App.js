@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch} from "react-router-dom";
 import { CreateProjectPage } from "../src/pages/CreateProjectPage";
 import { ProjectIndexPage } from "../src/pages/ProjectsIndexPage";
 import { ProjectShowPage } from "../src/pages/ProjectShowPage";
+import { WelcomePage } from "../src/pages/WelcomePage";
 
 
 const App = () => {
@@ -12,6 +13,8 @@ const App = () => {
        <Route exact path="/projects" component={ProjectIndexPage} />
         <Route exact path="/projects/new" component={CreateProjectPage} />
         <Route exact path="/projects/:id" component={ProjectShowPage} />
+        <Route exact path="/" component={WelcomePage} />
+
       </Switch>
     </BrowserRouter>
   )
