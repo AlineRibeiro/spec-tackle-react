@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Project } from "../api/project";
 import { Link } from "react-router-dom";
 import { Button, Icon } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 
 //pensar no futuro em colocar um isLoading false
 export const ProjectShowPage = (props) => {
@@ -21,6 +22,7 @@ export const ProjectShowPage = (props) => {
     });
   }, [props.match.params.id]);
   return (
+    <Container className='project-show'>
     <div>
       <h1>This is the project show page</h1>
       <p>{projectShow.project.name}</p>
@@ -40,5 +42,6 @@ export const ProjectShowPage = (props) => {
         </Button.Content>
       </Button>
     </div>
+    </Container>
   );
 };

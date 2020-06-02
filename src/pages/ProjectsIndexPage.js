@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Project } from "../api/project";
 import { Link } from "react-router-dom";
+import { Container } from "semantic-ui-react";
 
 export const ProjectIndexPage = () => {
   let [projectIndex, setProjectIndex] = useState({
@@ -13,6 +14,7 @@ export const ProjectIndexPage = () => {
     });
   }, []);
   return (
+    <Container className='project-index'>
     <div>
       <h1>My projects</h1>
       <ul>
@@ -23,5 +25,6 @@ export const ProjectIndexPage = () => {
         ))}
       </ul>
     </div>
+    </Container>
   );
 };

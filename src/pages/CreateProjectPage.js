@@ -20,7 +20,7 @@ const onFormSubmit = () => {
   });
 };
   return (
-    <Container>
+    <Container className='create-project'>
       <Form onSubmit={onFormSubmit}>
         <Form.Field>
           <label>Project Name</label>

@@ -22,7 +22,10 @@ div.ui.mini.secondary.top.fixed{
     background-color: white;
 }
 /*home page*/
-.container.home{
+.container.home,
+.container.project-index,
+.container.create-project,
+.container.project-show{
     padding-top: 100px;
 }
 
