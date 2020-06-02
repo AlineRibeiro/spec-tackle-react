@@ -39,7 +39,7 @@ export const  NavBar = (props) => {
         <Menu.Item
           name='start'
         >
-          <button className="start">START NOW</button>
+          <button className="start-button">START NOW</button>
         </Menu.Item>
         </Menu.Menu>
       </Menu>
