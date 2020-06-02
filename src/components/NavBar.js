@@ -4,7 +4,7 @@ import { Menu, Container, Button } from 'semantic-ui-react'
 export const  NavBar = (props) => {
     return (
       <Container>
-      <Menu secondary>
+      <Menu secondary size={"mini"}>
         <a href="/">
           <img
             src='../../images/spec-tackle_logo.png'
@@ -16,30 +16,30 @@ export const  NavBar = (props) => {
         <Menu.Item
           name='howDoesItWork'
         >
-          How does it work?
+          HOW DOES IT WORK?
         </Menu.Item>
 
         <Menu.Item
           name='saveMoney'
         >
-          Save Money
+         SAVE MONEY
         </Menu.Item>
 
         <Menu.Item
           name='team'
         >
-          Team
+          TEAM
         </Menu.Item>
         <Menu.Menu position={"right"}>
         <Menu.Item
           name='logIn'
         >
-          Login
+          LOGIN
         </Menu.Item>
         <Menu.Item
           name='start'
         >
-          <button className="start">Start</button>
+          <button className="start">START NOW</button>
         </Menu.Item>
         </Menu.Menu>
       </Menu>
