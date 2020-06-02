@@ -14,6 +14,7 @@
   background: rgb(14, 247, 248) none;
   color: rgb(0, 40, 104);
   font-family: Lato, "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 12px;
   margin: 0 0.25em 0 0;
   padding: 1em 1.5em 1em;
   font-weight: 550;
@@ -23,7 +24,7 @@
 div.item#navbar-item {
   color: rgb(48, 69, 92);
   font-weight: bolder;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 div.ui.mini.secondary.top.fixed {
@@ -39,6 +40,18 @@ div.ui.mini.secondary.top.fixed {
   color: rgb(48, 69, 92);
 }
 
+.home p{
+  font-size: 1.3em;
+}
+
 .container h1 {
-  font-size: 2.5em;
+  font-size: 2.9em;
+}
+
+.side-design {
+  width: auto;
+  height: 400px;
+  transform: rotate(140deg);
+  margin-top: 10px;
+  margin-left: -50px;
 }
