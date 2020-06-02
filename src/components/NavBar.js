@@ -14,24 +14,28 @@ export const  NavBar = (props) => {
           />
         </a>
         <Menu.Item
+          id='navbar-item'
           name='howDoesItWork'
         >
           HOW DOES IT WORK?
         </Menu.Item>
 
         <Menu.Item
+          id='navbar-item'
           name='saveMoney'
         >
          SAVE MONEY
         </Menu.Item>
 
         <Menu.Item
+          id='navbar-item'
           name='team'
         >
           TEAM
         </Menu.Item>
         <Menu.Menu position={"right"}>
         <Menu.Item
+          id='navbar-item'
           name='logIn'
         >
           LOGIN

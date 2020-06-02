@@ -1,4 +1,4 @@
-/*home page*/
+/*nav bar*/
 .start-button {
     cursor: pointer;
     min-height: 1em;
@@ -10,4 +10,10 @@
     padding: 1em 1.5em 1em;
     font-weight: 550;
     border-radius: .3rem;
+}
+
+div.item#navbar-item{
+    color: rgb(48, 69, 92);
+    font-weight: bolder;
+    font-size: 10px;
 }
