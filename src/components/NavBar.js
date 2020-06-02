@@ -1,8 +1,9 @@
 import React from "react";
-import { Menu } from 'semantic-ui-react'
+import { Menu, Container, Button } from 'semantic-ui-react'
 
 export const  NavBar = (props) => {
     return (
+      <Container>
       <Menu secondary>
         <a href="/">
           <img
@@ -29,6 +30,19 @@ export const  NavBar = (props) => {
         >
           Team
         </Menu.Item>
+        <Menu.Menu position={"right"}>
+        <Menu.Item
+          name='logIn'
+        >
+          Login
+        </Menu.Item>
+        <Menu.Item
+          name='start'
+        >
+          <button className="start">Start</button>
+        </Menu.Item>
+        </Menu.Menu>
       </Menu>
+      </Container>
     )
   };
