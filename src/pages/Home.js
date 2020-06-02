@@ -28,7 +28,7 @@ export const Home = (props) => {
             </p>
             <br />
             <br />
-            <button className="start-button">I want to test my app now</button>
+            <button className="start-button">I WANT TO TEST MY APP NOW</button>
           </Grid.Column>
           <Grid.Column width={7}>
             <img
