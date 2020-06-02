@@ -17,3 +17,12 @@ div.item#navbar-item{
     font-weight: bolder;
     font-size: 10px;
 }
+
+div.ui.mini.secondary.top.fixed{
+    background-color: white;
+}
+/*home page*/
+.container.home{
+    padding-top: 100px;
+}
+
