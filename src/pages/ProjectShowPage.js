@@ -22,26 +22,26 @@ export const ProjectShowPage = (props) => {
     });
   }, [props.match.params.id]);
   return (
-    <Container className='project-show'>
-    <div>
-      <h1>This is the project show page</h1>
-      <p>{projectShow.project.name}</p>
-      <p>{projectShow.project.environment}</p>
-      <p>{projectShow.project.link}</p>
-      <p>{projectShow.project.comment}</p>
-      <p>{projectShow.project.deadline}</p>
-      <p>{projectShow.project.finished_at}</p>
-      <Link to={`/projects`}>Back to projectIndex</Link>
-      <Button
-        floated="right"
-        color="red"
-        onClick={() => destroyProject(projectShow.project.id)}
-      >
-        <Button.Content visible>
-          <Icon name="trash alternate" />
-        </Button.Content>
-      </Button>
-    </div>
+    <Container className="project-show">
+      <div>
+        <h1>This is the project show page</h1>
+        <p>{projectShow.project.name}</p>
+        <p>{projectShow.project.environment}</p>
+        <p>{projectShow.project.link}</p>
+        <p>{projectShow.project.comment}</p>
+        <p>{projectShow.project.deadline}</p>
+        <p>{projectShow.project.finished_at}</p>
+        <Link to={`/projects`}>Back to projectIndex</Link>
+        <Button
+          floated="right"
+          color="red"
+          onClick={() => destroyProject(projectShow.project.id)}
+        >
+          <Button.Content visible>
+            <Icon name="trash alternate" />
+          </Button.Content>
+        </Button>
+      </div>
     </Container>
   );
 };

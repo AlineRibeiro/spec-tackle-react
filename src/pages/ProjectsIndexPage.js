@@ -14,17 +14,17 @@ export const ProjectIndexPage = () => {
     });
   }, []);
   return (
-    <Container className='project-index'>
-    <div>
-      <h1>My projects</h1>
-      <ul>
-        {projectIndex.projects.map((project) => (
-          <li key={project.id}>
-            <Link to={`/projects/${project.id}`}>{project.name}</Link>
-          </li>
-        ))}
-      </ul>
-    </div>
+    <Container className="project-index">
+      <div>
+        <h1>My projects</h1>
+        <ul>
+          {projectIndex.projects.map((project) => (
+            <li key={project.id}>
+              <Link to={`/projects/${project.id}`}>{project.name}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </Container>
   );
 };
