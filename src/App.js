@@ -5,7 +5,6 @@ import { ProjectIndexPage } from "../src/pages/ProjectsIndexPage";
 import { ProjectShowPage } from "../src/pages/ProjectShowPage";
 import { Home } from "../src/pages/Home";
 import { NavBar } from "./components/NavBar";
-import { Container } from "semantic-ui-react";
 
 const App = () => {
   return (

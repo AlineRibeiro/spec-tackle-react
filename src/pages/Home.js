@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Menu } from "semantic-ui-react";
+import { Container } from "semantic-ui-react";
 
 export const Home = (props) => {
   return (
