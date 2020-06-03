@@ -55,28 +55,65 @@ export const Home = (props) => {
           <div className="info-box">
             <Grid columns="equal">
               <Grid.Row>
-                <div className='divider'> </div>
-              <Grid.Column className='cl-1'>
-                <h5>WHAT YOU HAVE TO DO</h5>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-              </Grid.Column>
-              <Grid.Column className='cl-2'>
-                <h5>WHAT WE HAVE TO DO</h5>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-                <p>Test</p>
-              </Grid.Column>
+                <div className="divider"> </div>
+                <Grid.Column className="cl-1">
+                  <h5>WHAT YOU HAVE TO DO</h5>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Submit your codebase in development or your app in
+                    production
+                  </p>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Submit a script with the tests you want
+                  </p>
+                  <img alt="computer" src="../../images/computer.png" />
+                  <p>
+                    Save up to <span className="save">80%</span> with automated
+                    tests
+                  </p>
+                </Grid.Column>
+                <Grid.Column className="cl-2">
+                  <h5>WHAT WE HAVE TO DO</h5>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Send you an estimate
+                  </p>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Write automated tests for your app
+                  </p>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Record the tests so you can reference it later
+                  </p>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Submit the test for your approval
+                  </p>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Make changes to the tests if necessary
+                  </p>
+                  <p className="to-do">
+                    <span className="check-sign">&#10003;</span>
+                    &nbsp; Push tests to your github
+                  </p>
+                </Grid.Column>
               </Grid.Row>
             </Grid>
           </div>
-          <br />
-          <br />
-          <br />
         </Container>
+        <br />
+        <br />
+        <br />
+        <br />
+        <button className="start-button">I WANT TO TEST MY APP NOW</button>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
       </Grid.Row>
     </div>
   );
