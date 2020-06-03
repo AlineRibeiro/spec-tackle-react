@@ -104,6 +104,11 @@ h5 {
 }
 
 .second-row .start-button{
+  margin-top: 50px;
   position: absolute;
   left: 42%;
+}
+
+.blue-space{
+  height: 150px;
 }

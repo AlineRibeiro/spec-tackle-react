@@ -104,16 +104,8 @@ export const Home = (props) => {
             </Grid>
           </div>
         </Container>
-        <br />
-        <br />
-        <br />
-        <br />
         <button className="start-button">I WANT TO TEST MY APP NOW</button>
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+        <div className="blue-space"></div>
       </Grid.Row>
     </div>
   );
