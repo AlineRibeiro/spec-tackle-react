@@ -40,7 +40,7 @@ div.ui.mini.secondary.top.fixed {
   color: rgb(48, 69, 92);
 }
 
-.home p{
+.home p {
   font-size: 1.3em;
 }
 
@@ -54,4 +54,18 @@ div.ui.mini.secondary.top.fixed {
   transform: rotate(140deg);
   margin-top: 10px;
   margin-left: -50px;
+}
+
+.second-row {
+  background-color: rgb(244, 247, 251);
+  margin-top: 85px;
+}
+
+.second-row h1 {
+  padding-top: 50px;
+}
+
+.second-row p {
+ text-align: center;
+  color: rgb(48, 69, 92);
 }
