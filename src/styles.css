@@ -65,7 +65,27 @@ div.ui.mini.secondary.top.fixed {
   padding-top: 50px;
 }
 
-.second-row p {
+.call-to-action{
  text-align: center;
   color: rgb(48, 69, 92);
+}
+
+.info-box{
+  background-color: white;
+  border-radius: 0.7rem;
+  width: 60%;
+  margin: auto;
+}
+
+.divider{
+  position:absolute;
+  left:50%;
+  top:10%;
+  bottom:10%;
+  border-left:1px solid rgb(244, 247, 251);
+}
+
+.cl-1,
+.cl-2{
+  text-align: center;
 }

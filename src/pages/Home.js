@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid } from "semantic-ui-react";
+import { Container, Grid, Divider } from "semantic-ui-react";
 
 export const Home = (props) => {
   return (
@@ -46,11 +46,36 @@ export const Home = (props) => {
       <Grid.Row className="second-row">
         <Container>
           <h1>Check how we can help you automate tests and save money</h1>
-          <p>
+          <p className="call-to-action">
             Automated tests with us: quick, simple, efficient and value for
             money <br />
             Less than 10 minutes to submit your project
           </p>
+          <br />
+          <div className="info-box">
+            <Grid columns="equal">
+              <Grid.Row>
+                <div className='divider'> </div>
+              <Grid.Column className='cl-1'>
+                <h5>WHAT YOU HAVE TO DO</h5>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+              </Grid.Column>
+              <Grid.Column className='cl-2'>
+                <h5>WHAT WE HAVE TO DO</h5>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+                <p>Test</p>
+              </Grid.Column>
+              </Grid.Row>
+            </Grid>
+          </div>
+          <br />
+          <br />
+          <br />
         </Container>
       </Grid.Row>
     </div>
