@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { User } from "../api/user";
-import { Link } from "react-router-dom";
 import { Container } from "semantic-ui-react";
 
 export const UsersIndexPage = () => {
   let [userIndex, setUserIndex] = useState({
     users: [],
   });
+
 
   useEffect(() => {
     User.index().then((response) => {
@@ -20,7 +20,9 @@ export const UsersIndexPage = () => {
         <ul>
           {userIndex.users.map((user) => (
             <li key={user.id}>
-              <Link to={`/users/${user.id}`}>{user.name}</Link>
+              {/*<Link to={`/users/${user.id}`}>{user.name}</Link>*/}
+             {user.name}
+              {user.email}
             </li>
           ))}
         </ul>

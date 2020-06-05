@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Grid, Divider } from "semantic-ui-react";
+import { Container, Grid } from "semantic-ui-react";
 
 export const Home = (props) => {
   return (
