@@ -7,7 +7,6 @@ export const UsersIndexPage = () => {
     users: [],
   });
 
-
   useEffect(() => {
     User.index().then((response) => {
       setUserIndex({ users: response.users });
@@ -21,7 +20,7 @@ export const UsersIndexPage = () => {
           {userIndex.users.map((user) => (
             <li key={user.id}>
               {/*<Link to={`/users/${user.id}`}>{user.name}</Link>*/}
-             {user.name}
+              {user.name}
               {user.email}
             </li>
           ))}
