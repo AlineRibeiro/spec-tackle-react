@@ -20,7 +20,7 @@ export const ProjectIndexPage = () => {
         <ul>
           {projectIndex.projects.map((project) => (
             <li key={project.id}>
-              <Link to={`/projects/${project.id}`}>{project.name}</Link>
+              <Link to={`/projects/${project._id}`}>{project.name}</Link>
             </li>
           ))}
         </ul>
