@@ -35,7 +35,7 @@ export const ProjectShowPage = (props) => {
         <Button
           floated="right"
           color="red"
-          onClick={() => destroyProject(projectShow.project.id)}
+          onClick={() => destroyProject(projectShow.project._id)}
         >
           <Button.Content visible>
             <Icon name="trash alternate" />
